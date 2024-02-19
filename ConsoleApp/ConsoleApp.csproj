@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60951B00-04CA-4262-BFE9-F02EE2EA4672}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ConsoleApp</RootNamespace>
+    <AssemblyName>ConsoleApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Array_Questions\Find_Missing_number.cs" />
+    <Compile Include="Array_Questions\Merge_two_sorted_Array.cs" />
+    <Compile Include="Array_Questions\Reverse_order_of _element.cs" />
+    <Compile Include="Array_Questions\Reverse_Sort_Sum_Min_Max_Of_Array.cs" />
+    <Compile Include="Array_Questions\Second_largest_number.cs" />
+    <Compile Include="Array_Questions\Sweeping_numbers.cs" />
+    <Compile Include="Console_Questions\Armstrong.cs" />
+    <Compile Include="Console_Questions\Calculate_Power_of_Number.cs" />
+    <Compile Include="Console_Questions\Celsius_to_Fahrenheit.cs" />
+    <Compile Include="Console_Questions\Cube_of_number.cs" />
+    <Compile Include="Console_Questions\Display_Even_Numbers.cs" />
+    <Compile Include="Console_Questions\Display_traingle_pattern_Numbers.cs" />
+    <Compile Include="Console_Questions\Display_triangle_pattern.cs" />
+    <Compile Include="Console_Questions\Even_odd.cs" />
+    <Compile Include="Console_Questions\FibonacciSeries.cs" />
+    <Compile Include="Console_Questions\Find_Factorial.cs" />
+    <Compile Include="Console_Questions\GCD_LCD.cs" />
+    <Compile Include="Console_Questions\Largest_Number.cs" />
+    <Compile Include="Console_Questions\Multiplication_Table.cs" />
+    <Compile Include="Console_Questions\Palindrome.cs" />
+    <Compile Include="Console_Questions\Prime.cs" />
+    <Compile Include="Console_Questions\Print_Random_Numbers.cs" />
+    <Compile Include="Console_Questions\Reversed_Order_string.cs" />
+    <Compile Include="Console_Questions\Reverse_String.cs" />
+    <Compile Include="Console_Questions\Simple_Interest.cs" />
+    <Compile Include="Console_Questions\SmallestNumber.cs" />
+    <Compile Include="Console_Questions\SumOfDigits.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
